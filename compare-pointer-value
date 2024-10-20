@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdint.h> // For uintptr_t and intptr_t
+
+int main() {
+    int num = 1;
+    // Note: Using (int *)10 is not safe; it's for demonstration only.
+    uintptr_t address = (uintptr_t)num; // Example of an integer that represents a pointer address
+    int *p = (int *)address; // Cast the integer back to a pointer
+
+    // Comparing num with the integer value represented by the pointer
+    if (num == (uintptr_t)p) {
+        printf("num is equal to the value of p's address.\n");
+    } else {
+        printf("num is not equal to the value of p's address.\n");
+    }
+
+    return 0;
+}
