@@ -9,7 +9,7 @@ typedef struct student{
 
 int main()
 {
-    stu a={"prasad",78,'A'};
+    stu a={"DJ",97,'A'};
     printf("%s\n",a.name);
     printf("%d\n",a.marks);
     printf("%c",a.grade);
